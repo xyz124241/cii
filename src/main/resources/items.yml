@@ -1,0 +1,73 @@
+# Namen und Lore unterstuetzen MiniMessage (<gradient:#ff0000:#ffd000>Text</gradient>, <#ff8800>, <bold> ...)
+# sowie alte &-Codes (&6, &l, &#ff8800).
+# Standard-Items. Wird beim ersten Start nach plugins/ACI/items.yml kopiert.
+# Alles hier kann auch bequem im Spiel ueber /aci bearbeitet werden.
+#
+# effects:
+#   type:    Name des Effekts (z.B. SPEED, STRENGTH, FIRE_RESISTANCE)
+#   level:   1 = Stufe I, 2 = Stufe II, ...
+#   slot:    MAIN_HAND, OFF_HAND, HELMET, CHESTPLATE, LEGGINGS, BOOTS, ANYWHERE
+#   seconds: 0 = nur solange das Item im Slot ist (staendig erneuert)
+#            >0 = Effekt mit dieser Laenge (z.B. 480 = 8 Minuten), wird erneuert solange das Item im Slot ist
+items:
+  orange_crystal:
+    name: "<bold><gradient:#ff3d00:#ffd000>Feuer-Kristall</gradient></bold>"
+    material: AMETHYST_SHARD
+    texture: orange_crystal
+    lore: []
+    effects:
+      - type: fire_resistance
+        level: 1
+        slot: OFF_HAND
+        seconds: 480
+    recipes: []
+  yellow_crystal:
+    name: "<bold><gradient:#fff176:#ff9800>Kraft-Kristall</gradient></bold>"
+    material: AMETHYST_SHARD
+    texture: yellow_crystal
+    lore: []
+    effects:
+      - type: strength
+        level: 2
+        slot: OFF_HAND
+        seconds: 0
+    recipes: []
+  blue_crystal:
+    name: "<bold><gradient:#00e5ff:#2962ff>Tempo-Kristall</gradient></bold>"
+    material: AMETHYST_SHARD
+    texture: blue_crystal
+    lore: []
+    effects:
+      - type: speed
+        level: 2
+        slot: OFF_HAND
+        seconds: 0
+    recipes: []
+  purple_crystal:
+    name: "<bold><gradient:#e040fb:#651fff>Violetter Kristall</gradient></bold>"
+    material: AMETHYST_SHARD
+    texture: purple_crystal
+    lore: []
+    effects: []
+    recipes: []
+  white_crystal:
+    name: "<bold><gradient:#ffffff:#9fa8da>Weisser Kristall</gradient></bold>"
+    material: AMETHYST_SHARD
+    texture: white_crystal
+    lore: []
+    effects: []
+    recipes: []
+  gray_crystal:
+    name: "<bold><gradient:#e0e0e0:#757575>Grauer Kristall</gradient></bold>"
+    material: AMETHYST_SHARD
+    texture: gray_crystal
+    lore: []
+    effects: []
+    recipes: []
+  black_crystal:
+    name: "<bold><gradient:#78909c:#263238>Schwarzer Kristall</gradient></bold>"
+    material: AMETHYST_SHARD
+    texture: black_crystal
+    lore: []
+    effects: []
+    recipes: []

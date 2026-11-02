@@ -1,0 +1,21 @@
+name: ACI
+version: 1.0.0
+main: de.aci.AciPlugin
+api-version: '1.21'
+description: Custom Items, Texturen (Resource Pack), Rezepte und Effekte
+commands:
+  aci:
+    description: Admin-Menue fuer Custom Items
+    usage: /aci [reload|pack|give <id> [spieler] [anzahl]|list]
+    permission: aci.admin
+  ci:
+    description: Rezeptbuch der Custom Items
+    usage: /ci
+    permission: aci.use
+permissions:
+  aci.admin:
+    description: Custom Items erstellen und bearbeiten
+    default: op
+  aci.use:
+    description: Rezeptbuch oeffnen
+    default: true

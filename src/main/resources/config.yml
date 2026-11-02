@@ -1,0 +1,20 @@
+# ACI - Einstellungen
+resource-pack:
+  # Pack beim Beitritt automatisch senden
+  send-on-join: true
+  # true = Spieler, die das Pack ablehnen, werden gekickt
+  required: false
+  prompt: "&6Bitte lade das ACI-Resource-Pack, damit du die Kristalle siehst!"
+
+  # Eigene Download-URL (wenn du das Pack selbst irgendwo hostest). Leer = Plugin hostet selbst.
+  url: ""
+  # SHA-1 des Packs (nur noetig, wenn du oben eine eigene URL angibst; optional)
+  sha1: ""
+
+  # Eingebauter Mini-Webserver, der resourcepack.zip ausliefert
+  host:
+    enabled: true
+    # Dieser Port muss in der Firewall/beim Hoster freigegeben sein (TCP)
+    port: 8123
+    # Oeffentliche IP oder Domain deines Servers (z.B. 123.45.67.89 oder mc.meinserver.de)
+    public-address: ""
